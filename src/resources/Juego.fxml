@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?> 
+<?import javafx.scene.layout.HBox?> 
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="hellofx.JuegoController" fx:id="fondo">
+  <VBox alignment="CENTER" spacing="30" fx:id="content">
+    <Label fx:id="turnos"/>
+    <HBox alignment="CENTER" spacing="20">
+      <GridPane alignment="CENTER" fx:id="tablero">
+        <Button fx:id="b00" onAction="#cB00" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Button fx:id="b01" onAction="#cB01" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Button fx:id="b02" onAction="#cB02" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+        <Button fx:id="b10" onAction="#cB10" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Button fx:id="b11" onAction="#cB11" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Button fx:id="b12" onAction="#cB12" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+        <Button fx:id="b20" onAction="#cB20" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <Button fx:id="b21" onAction="#cB21" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Button fx:id="b22" onAction="#cB22" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+      </GridPane>
+      <VBox alignment="TOP_LEFT" fx:id="chat">
+        <HBox alignment="TOP_LEFT">
+          <Label fx:id="stich"/>
+          <Label fx:id="frase"/>
+        </HBox>
+      </VBox>
+    </HBox>
+  </VBox>
+</StackPane>
